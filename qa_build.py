@@ -100,7 +100,7 @@ try:
         )
 
         # CSS scroll offset gives Notion-like breathing room without a second JS scroll.
-        anchor_css = '<style id="qa-anchor-style">[id^="block-"]{scroll-margin-top:86px}.toggle-body>p{line-height:2;margin-top:18px;margin-bottom:22px}</style>'
+        anchor_css = '<style id="qa-anchor-style">[id^="block-"]{scroll-margin-top:86px}.toggle-body>p{line-height:1.9;margin:6px 0}.toggle-body>p:has(>strong:first-child){margin-top:28px;margin-bottom:10px}</style>'
         html = html.replace('</head>', anchor_css + '</head>', 1)
 
         odaibako = (
